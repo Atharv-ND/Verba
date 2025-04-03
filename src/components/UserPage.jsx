@@ -22,7 +22,7 @@ const UserPage = ({ onSignOut, addToCart, cart, email}) => {
     { id: 12, title: 'Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future', author: 'Ashlee Vance', category: 'Biography', price: 2324, image: '../12.jpeg' },
     { id: 13, title: 'Brave New World', author: 'Aldous Huxley', category: 'Fiction', price: 913, image: '../13.jpeg' },
     { id: 14, title: 'The Elegant Universe', author: 'Brian Greene', category: 'Science', price: 1577, image: '../14.jpeg' },
-    { id: 15, title: 'A Peoples History of the United States', author: 'Howard Zinn', category: 'History', price: 1743, image: '../15.png' },
+    { id: 15, title: 'A Peoples History of the United States', author: 'Howard Zinn', category: 'History', price: 1743, image: './15.png' },
     /*{ id: 16, title: 'Long Walk to Freedom', author: 'Nelson Mandela', category: 'Biography', price: 2490, image: 'https://m.media-amazon.com/images/I/81GqtNbs+PL.jpg' },
     { id: 17, title: 'The Catcher in the Rye', author: 'J.D. Salinger', category: 'Fiction', price: 1079, image: 'https://m.media-amazon.com/images/I/81OthjkJBuL.jpg' },
     { id: 18, title: 'Cosmos', author: 'Carl Sagan', category: 'Science', price: 1411, image: 'https://m.media-amazon.com/images/I/81BzeNG+xlL.jpg' },
@@ -46,7 +46,7 @@ const UserPage = ({ onSignOut, addToCart, cart, email}) => {
 
   return (
     <>
-      <UserNavbar cartCount={cart.length} signOut={onSignOut} email={email} />
+      <UserNavbar cartCount={cart.length} signOut={onSignOut} emailVal={email} />
       <div className="user-page">
         <div className="search-and-filter">
           <input 

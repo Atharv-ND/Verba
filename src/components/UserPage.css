@@ -284,6 +284,9 @@
 }
 
 @media (max-width: 768px) {
+    .category-buttons {
+            flex-direction: column;
+        }
     .search-and-filter {
         flex-direction: column;
     }
@@ -295,6 +298,9 @@
 }
 
 @media (max-width: 576px) {
+    .category-buttons{
+        flex-direction: column;
+    }
     .user-page {
         padding: 1.5rem 4%;
     }
