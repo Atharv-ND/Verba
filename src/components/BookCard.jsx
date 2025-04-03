@@ -35,7 +35,7 @@ const BookCard = ({ book, addToCart }) => {
         <img src={book.image} alt={book.title} />
         <div className="book-rating">
           <i className="fas fa-star"></i>
-          <span>{book.rating || '4.5'}</span>
+          <span>{book.rating || '4.5'} ⭐</span>
         </div>
       </div>
       <div className="book-details">

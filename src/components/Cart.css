@@ -21,8 +21,8 @@
 
 .continue-shopping {
     background-color: transparent;
-    color: #3498db;
-    border: 1px solid #3498db;
+    color: #007bff;
+    border: 1px solid #007bff;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
@@ -30,7 +30,7 @@
 }
 
 .continue-shopping:hover {
-    background-color: #3498db;
+    background-color: #0033ff;
     color: white;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .start-shopping {
-    background-color: #3498db;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -70,7 +70,7 @@
 }
 
 .start-shopping:hover {
-    background-color: #2980b9;
+    background-color: #0d00ff;
 }
 
 .cart-content {
