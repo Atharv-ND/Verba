@@ -50,7 +50,7 @@ const CartPage = ({ cart, removeFromCart, handleBuy, userEmail}) => {
                   {buyBooks.map((book, index) => (
                     <li key={`buy-${index}`} className="cart-item">
                       <div className="item-image">
-                        <img src={book.image} alt={book.title} />
+                        <img src={`/assets/${book.image}`} alt={book.title} />
                       </div>
                       <div className="item-details">
                         <h4>{book.title}</h4>
@@ -78,7 +78,7 @@ const CartPage = ({ cart, removeFromCart, handleBuy, userEmail}) => {
                   {rentBooks.map((book, index) => (
                     <li key={`rent-${index}`} className="cart-item">
                       <div className="item-image">
-                        <img src={book.image} alt={book.title} />
+                        <img src={`/assets/${book.image}`} alt={book.title} />
                       </div>
                       <div className="item-details">
                         <h4>{book.title}</h4>
