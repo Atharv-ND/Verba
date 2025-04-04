@@ -75,6 +75,7 @@ const Footer = () => {
           <h3 className="footer-title">Contact Us</h3>
           <div className="contact-info">
             <p><i className="fas fa-map-marker-alt"></i> Atharv Naik Desai</p>
+            <p>23BCE0393</p>
             <p><i className="fas fa-phone"></i> +91 8767101565</p>
             <p><i className="fas fa-envelope"></i> atharvnaikdesai@gmail.com</p>
           </div>
