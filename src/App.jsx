@@ -58,7 +58,7 @@ const App = () => {
       {!isUserPage && <Footer />}
 
       <Routes>
-        <Route path="/user/:userId" element={<UserPage onSignOut={handleSignOut} addToCart={addToCart} cart={cart} email={userEmail}/>} />
+        <Route path="/user/:userId" element={<UserPage onSignOut={handleSignOut} addToCart={addToCart} cart={cart}/>} />
         <Route path="/user/cart" element={<CartPage cart={cart} removeFromCart={removeFromCart} handleBuy={handleBuy} userEmail={userEmail} />} />
       </Routes>
     </div>

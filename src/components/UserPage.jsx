@@ -3,7 +3,7 @@ import './UserPage.css';
 import UserNavbar from './UserNavbar';
 import BookCard from './BookCard';
 
-const UserPage = ({ onSignOut, addToCart, cart, email}) => {
+const UserPage = ({ onSignOut, addToCart, cart}) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   
@@ -46,7 +46,7 @@ const UserPage = ({ onSignOut, addToCart, cart, email}) => {
 
   return (
     <>
-      <UserNavbar cartCount={cart.length} signOut={onSignOut} emailVal={email} />
+      <UserNavbar cartCount={cart.length} signOut={onSignOut}/>
       <div className="user-page">
         <div className="search-and-filter">
           <input 
