@@ -38,7 +38,7 @@ const About = () => {
         </div>
         
         <div className="about-image">
-          <div className="image-placeholder"><img src="./about_image.jpg" alt="Image"/></div>
+          <div className="image-placeholder"><img src="images/about_image.jpg" alt="Image"/></div>
         </div>
       </div>
     </section>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './SignInPopup.css';
+import './SignInPopUp.css';
 import { useNavigate } from 'react-router-dom';
 
-const SignInPopup = ({ isOpen, onClose , onLogin}) => {
+const SignInPopUp = ({ isOpen, onClose , onLogin}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isRegistering, setIsRegistering] = useState(false); // Toggle between Register and Sign In modes
@@ -131,6 +131,6 @@ const SignInPopup = ({ isOpen, onClose , onLogin}) => {
   );
 };
 
-export default SignInPopup;
+export default SignInPopUp;
 
 

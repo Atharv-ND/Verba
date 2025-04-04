@@ -5,7 +5,7 @@ const UserNavbar = ({ signOut, cartCount}) => {
   const navigate = useNavigate(); 
   return (
     <nav className="user-navbar">
-      <h1><img src="/images/user.svg" alt="" height={40} width={40}/> <span>User</span></h1>
+      <h1><img src="/assets/user.svg" alt="User Icon" height="40" width="40" /> <span>User</span></h1>
       <ul>
         <li>
           <button className="cart-button" onClick={() => navigate('/user/cart')}>

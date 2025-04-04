@@ -41,13 +41,13 @@ const Footer = () => {
           </p>
           <div className="social-icons">
             <a href="#" className="social-icon">
-              <img src="./portfolio.svg" alt="" />
+              <img src="images/portfolio.svg" alt="" />
             </a>
             <a href="https://www.linkedin.com/in/atharv-naik-desai-31b460350/" className="social-icon">
-              <img src="./linkedin.svg" alt="" />
+              <img src="images/linkedin.svg" alt="" />
             </a>
             <a href="https://github.com/Atharv-ND" className="social-icon">
-              <img src="./git.svg" alt="Image" />
+              <img src="images/git.svg" alt="Image" />
             </a>
           </div>
         </div> 

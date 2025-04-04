@@ -32,7 +32,8 @@ const BookCard = ({ book, addToCart ,download}) => {
   return (
     <div className="book-card">
       <div className="book-image-container">
-        <img src={`/images/${book.image}`} alt={book.title} />
+        <img src={`/assets/${book.image}`} alt={book.title} />
+
         <div className="book-rating">
           <i className="fas fa-star"></i>
           <span>{book.rating || '4.5'} ⭐</span>
