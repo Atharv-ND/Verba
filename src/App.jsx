@@ -13,7 +13,8 @@ const App = () => {
   const location = useLocation();
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [cart, setCart] = useState([]);
-  const [userEmail, setUserEmail] = useState(null); // Store the user's logged in email
+  const [userEmail, setUserEmail] = useState(null); 
+  // Store the user's logged in email
 
   const openPopup = () => {
     setIsPopupOpen(true);
@@ -44,6 +45,7 @@ const App = () => {
 
   const handleBuy = () => {
     alert('Purchase successful!');
+    alert("The E-Book can now be downloaded");
     setCart([]);
   };
 
@@ -58,7 +60,7 @@ const App = () => {
       {!isUserPage && <Footer />}
 
       <Routes>
-        <Route path="/user/:userId" element={<UserPage onSignOut={handleSignOut} addToCart={addToCart} cart={cart}/>} />
+        <Route path="/user/:userId" element={<UserPage onSignOut={handleSignOut} addToCart={addToCart} cart={cart} />} />
         <Route path="/user/cart" element={<CartPage cart={cart} removeFromCart={removeFromCart} handleBuy={handleBuy} userEmail={userEmail} />} />
       </Routes>
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Cart.css';
 
-const CartPage = ({ cart, removeFromCart, handleBuy, userEmail }) => {
+const CartPage = ({ cart, removeFromCart, handleBuy, userEmail}) => {
   const navigate = useNavigate();
 
   const totalPrice = cart.reduce((acc, book) => acc + book.finalPrice, 0);
@@ -107,7 +107,7 @@ const CartPage = ({ cart, removeFromCart, handleBuy, userEmail }) => {
               <span>Rs. {totalPrice}</span>
             </div>
             <div className="summary-item">
-              <span>Shipping:</span>
+              <span>Convinience Fee:</span>
               <span>Free</span>
             </div>
             <div className="summary-total">

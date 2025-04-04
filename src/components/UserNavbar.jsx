@@ -4,10 +4,9 @@ import './UserNavbar.css';
 
 const UserNavbar = ({ signOut, cartCount}) => {
   const navigate = useNavigate(); 
-  console.log(email);
   return (
     <nav className="user-navbar">
-      <h1>User</h1>
+      <h1><img src="../user.svg" alt="" height={40} width={40}/> <span>User</span></h1>
       <ul>
         <li>
           <button className="cart-button" onClick={() => navigate('/user/cart')}>

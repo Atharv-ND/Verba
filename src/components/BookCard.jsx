@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './BookCard.css';
 
-const BookCard = ({ book, addToCart }) => {
+const BookCard = ({ book, addToCart ,download}) => {
   const [purchaseOption, setPurchaseOption] = useState('buy'); 
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState('');
@@ -58,10 +58,14 @@ const BookCard = ({ book, addToCart }) => {
             Rent: Rs. {Math.round(book.price * 0.4)}
           </button>
         </div>
-        
-        <button className="add-to-cart-btn" onClick={handleAddToCart}>
+        {!download? <button className="add-to-cart-btn" onClick={handleAddToCart}>
           <i className="fas fa-plus"></i> Add to Cart
+        </button> :
+        <button className="add-to-cart-btn" onClick={handleAddToCart}>
+          <i className="fas fa-plus"></i> Download
         </button>
+        }
+        
       </div>
       
       {/* Custom Alert */}

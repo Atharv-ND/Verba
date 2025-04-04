@@ -95,16 +95,6 @@
     height: 100%;
 }
 
-.image-placeholder::before {
-    content: "📚";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5rem;
-    opacity: 0.2;
-}
-
 @media (max-width: 992px) {
     .about-container {
         flex-direction: column;

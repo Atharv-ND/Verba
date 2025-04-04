@@ -56,7 +56,7 @@ const SignInPopup = ({ isOpen, onClose , onLogin}) => {
       const storedPassword = JSON.parse(storedUser).password;
       if (storedPassword === password) {
         alert('Signed In Successfully');
-        onLogin(); // Direct to the user page
+        onLogin(email); // Direct to the user page
         onClose();
       } else {
         alert('Incorrect password');
